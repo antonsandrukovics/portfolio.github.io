@@ -1,0 +1,296 @@
+body {
+    font-family: 'Antonio', sans-serif;
+    background: linear-gradient(135deg, #d7aa81, #423431);
+}
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Header*/
+header {
+    background-color: #2c3e50;
+    position: fixed;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo-img {
+    width: 75px;
+    height: 75px;
+    filter: invert(1);
+}
+.header-navbar-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.header-navbar-list-item {
+    margin-left: 40px;
+}
+.header-navbar-list-item-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/*Main*/
+
+/*Start page*/
+.start-page {    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.start-page-description,
+.start-page-image {
+    margin: auto 0;
+    text-align: center;
+}
+.start-page-description-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.start-page-description-text {
+    font-size: 20px;
+}
+.start-page-image-img {
+    width: 600px;
+    height: 350px;
+}
+
+/*Resume page*/
+.resume-page {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.education {
+    margin-bottom: 100px;
+}
+.main-title {
+    padding: 0;
+    margin-bottom: 120px;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+.main-page-title-h3 {
+    font-size: 30px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.main-page-title-img {
+    width: 25px;
+    height: 25px;
+}
+.education-page-sections {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.education-page-sections-item {
+    width: 20%;
+    margin: 0 40px;
+}
+.education-page-sections-item-years, 
+.education-page-sections-item-school {
+    font-size: 20px;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #445a72, #2c3e50);
+    box-shadow: 3px 3px 3px 3px black;
+    color: #fff;
+    border-radius: 10px;
+}
+.education-page-sections-item-text {
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.education-page-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Portfolio page*/
+.portfolio-page {
+    margin-top: 100px;
+}
+.projects {
+    width: 300px;
+    max-height: 100%;
+}
+.portfolio-page-projects {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+.portfolio-page-projects-item {
+    background: linear-gradient(90deg, #445a72, #2c3e50);
+    text-align: center;
+}
+.portfolio-page-projects-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+/*Footer*/
+.footer {
+    background: linear-gradient(90deg, #2c3e50, #1d2935);
+    color: #fff;
+}
+.footer {
+    margin-top: 150px;
+}
+.footer-icon {
+    width: 15px;
+    height: 15px;
+}
+.contact-list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Media query*/
+@media (max-width: 1400px)
+{
+    .header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 1020px)
+{
+    .education-page-sections {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .education-page-sections-item-years {
+        font-size: 40px;
+        width: 200px;
+    }
+    .education-page-sections-item-school {
+        font-size: 40px;
+        width: 400px;
+        margin-top: 0;
+    }
+    .main-title {
+        font-size: 80px;
+    }
+    .main-page-title-h3 {
+        font-size: 40px;
+    }
+    .main-page-title-img {
+        width: 40px;
+        height: 40px;
+    }
+    .education-page-sections-item-text {
+        font-size: 25px;
+        width: 400px;
+        border-bottom: none;
+    }
+    .education-page-sections-item {
+        border-bottom: 5px solid #000;
+    }
+    .education-page-sections-item:last-child {
+        border-bottom: none;
+    }
+}
+@media (max-width: 900px)
+{
+    .start-page, .portfolio-page-projects {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .portfolio-page-projects {
+        width: 300px;
+    }
+    .portfolio-page-projects-item {
+        margin-bottom: 100px;
+    }
+    .portfolio-page-projects-item:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 670px)
+{
+    .main-title {
+        font-size: 40px;
+    }
+    .start-page-image-img {
+        display: none;
+    }
+}
+@media (max-width: 600px)
+{
+    .header-logo-img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-navbar-list-item-link{
+        font-size: 15px;
+    }
+}
+@media (max-width: 550px)
+{
+    .education-page-sections-item-years {
+        font-size: 20px;
+        width: 100px;
+    }
+    .education-page-sections-item-school {
+        font-size: 20px;
+        width: 200px;
+        margin-top: 0;
+    }
+    .main-title {
+        font-size: 50px;
+    }
+    .main-page-title-h3 {
+        font-size: 20px;
+    }
+    .main-page-title-img {
+        width: 20px;
+        height: 20px;
+    }
+    .education-page-sections-item-text {
+        font-size: 15px;
+        width: 200px;
+        border-bottom: none;
+    }
+    .header-logo-img {
+        display: none;
+    }
+    .header-navbar-list-item-link {
+        font-size: 10px;
+    }
+    .portfolio-h2 {
+        font-size: 30px;
+    }
+    .start-page-description-title {
+        font-size: 30px;
+    }
+}

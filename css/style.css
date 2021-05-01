@@ -139,7 +139,7 @@ header {
 .portfolio-page-projects {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 100%;
 }
 .portfolio-page-projects-item {
     background: linear-gradient(90deg, #445a72, #2c3e50);
@@ -257,6 +257,10 @@ header {
 }
 @media (max-width: 550px)
 {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
     .education-page-sections-item-years {
         font-size: 20px;
         width: 100px;
@@ -280,9 +284,6 @@ header {
         font-size: 15px;
         width: 200px;
         border-bottom: none;
-    }
-    .header-logo-img {
-        display: none;
     }
     .header-navbar-list-item-link {
         font-size: 10px;
